@@ -1,6 +1,9 @@
 // Predict and explain first...
 
-// This code should log out the houseNumber from the address object
+// Here the aim is to print the house number from the address object.
+// However, the code attempts to access the house number using an array index.
+// This is incorrect because `address` is an object, not an array.
+
 // but it isn't working...
 // Fix anything that isn't working
 
@@ -12,4 +15,4 @@ const address = {
   postcode: "XYZ 123",
 };
 
-console.log(`My house number is ${address[0]}`);
+console.log(`My house number is ${address.houseNumber}`);
